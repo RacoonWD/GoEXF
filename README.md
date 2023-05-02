@@ -1,21 +1,21 @@
-# Instalation 
+# 설치 #
 `go get github.com/F-r-o-i-d/GoExF/
 
-# Documentation
-🔴 -> need Admin
-🟢 -> Admin not required
+# 선적 서류 비치
+🔴 -> 관리자 필요
+🟢 -> 관리자가 필요하지 않음
 
-⚫ -> Visible to target
-⚪ -> Invisible to target
+⚫ -> 대상에 표시
+⚪ -> 대상에게 보이지 않음
 
-## CodeInjection
-**Execute code on a target machine.**
+## 코드 주입
+**대상 컴퓨터에서 코드를 실행합니다. **
 
 `github.com/F-r-o-i-d/GoExF/GoExF/GoSploit/InfectApp`
 
-#### - `InfectApp.InfectBlender(` *payload* ` )` [🔴⚪]
+#### - `InfectApp.InfectBlender(` *페이로드(Payload)* ` )` [🔴⚪]
 
-Injects a malicious script (batch) in blender code
+블렌더 코드에 악성 스크립트(배치) 주입 
 ### ex :
 ```golang
 package main
@@ -27,9 +27,9 @@ func main(){
 }
 ```
 ___
-#### - `InfectApp.InfectDiscord(` *payload* ` )` [🟢⚪]
+#### - `InfectApp.InfectDiscord(` *페이로드(Payload)* ` )` [🟢⚪]
 
-Injects a malicious script (nodejs) in discord code
+디스코드 코드에 악성 스크립트(nodejs) 주입 
 
 ### ex :
 ```golang
@@ -43,8 +43,8 @@ func main(){
 
 ```
 ___
-## Persistance
-**Make evil program stuck on the target machine.**
+## 고집
+**악의적인 프로그램을 대상 시스템에 고정시킵니다. **
 
 `github.com/GoExF/GoExF/GoSploit`
 
@@ -67,7 +67,7 @@ ___
 
 #### - `GoSploit.StartUpWdregedit()`[🔴⚫]
 
-create key regedit to launch exe at startup
+시작 시 exe를 실행하기 위한 키 regedit 생성
 
 ### ex :
 ```golang
@@ -83,7 +83,7 @@ func main(){
 ___
 #### - `GoSploit.StartUpWservice(ServiceName)`[🔴⚪]
 
-create a service to launch exe at startup
+시작할 때 exe를 실행하는 서비스 만들기 
 ### ex :
 ```golang
 package main
@@ -98,7 +98,7 @@ func main(){
 ___
 ## Trojan
 
-**Make evil file hiden to look like something good.**
+**나쁜 파일을 숨겨서 좋은 것처럼 보이도록 만드십시오.**
 
 `import EvilFile "github.com/GoExF/GoExF/GoSploit/EvilFile"`
 
